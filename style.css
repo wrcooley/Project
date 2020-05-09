@@ -1,0 +1,163 @@
+header {
+	font-family: Blippo, fantasy;
+	font-stretch: semi-expanded;
+	font-weight: bold;
+	color: #1BB547; 
+	font-size: 48px;
+	padding:3px;
+	text-align:center;
+}
+body {
+	font-family: Trebuchet MS;
+	font-weight: normal;
+	color: #000000;
+	font-size: 16px;
+	padding:3px;
+}
+h1 {
+	font-family: Trebuchet MS;
+	font-weight: normal;
+	color: #690000;
+	font-size: 16px;
+	padding:3px;
+	margin-top:0px;
+}
+p {
+	margin-left:9px;
+	margin-top:auto;
+}
+img {
+	width:100%;
+}
+#map-h {
+	margin-left:18px;
+	margin-top:0px;
+	margin-bottom:3px;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+#map {
+	margin-left:18px;
+	padding-top:0px;
+	margin-top:0px;
+	margin-top:0px;
+	margin-bottom:3px;
+	padding-bottom:0px;
+}
+#savedlist {
+	padding-left:85px;
+	margin:3px;
+}
+button {
+	width:184px;
+   text-decoration: none; /* remove underline */
+   border-radius: 10px;  /* rounded corners */
+   margin: 6px;
+   padding: 9px;
+   color: #086923;
+   font-weight: bold;
+	text-align:center;
+   border: 3px solid #086923; /* dark outline */
+   background-color:#fff;
+   float:left;
+   height:55px;
+	font-size: 16px;
+}
+button a {
+	text-decoration:none;
+	color: #086923;
+}
+#gohome {
+	width:70px;
+	height:40px;
+	padding-bottom:20px;
+	margin-right:500px;
+}
+#gohome a {
+	text-decoration: none; /* remove underline */
+	
+	color:#086923;
+}
+#main_nav ul { padding: 0; margin: 0; 
+	margin-top:75px;}
+
+#main_nav li  {
+  list-style-type: none; /* remove bullet points */ 
+  
+}
+#USE {
+	width:70px;
+}
+#USE a{
+	text-decoration:none;
+	color:#086923;
+}
+#main_nav li a {
+   display: block;
+   text-decoration: none; /* remove underline */
+   border-radius: 10px;  /* rounded corners */
+   margin: 6px;
+   padding: 15px;
+   color: #086923;
+   font-weight: bold;
+	text-align:center;
+   border: 3px solid #026923; /* dark outline */
+   
+}
+title {
+	text-align:center;
+}
+/* https://stackoverflow.com/questions/1229856/what-is-the-best-way-to-style-a-list-of-checkboxes */
+.checkboxgroup{
+    width:auto;
+    overflow: auto;
+	text-align:center;
+	float:center;
+	border:3px solid #666;
+	border-radius:10px;
+	border-color:#086923;
+	margin:6px;
+}
+.checkboxgroup p{
+    width: auto;
+    text-align: center;
+	color: #1BB547;
+	font-size: 18px;
+	margin-top:0px;
+}
+.checkboxgroup label{
+    width: 12em;
+    float: left;
+	text-align:left;
+	margin-bottom:10px;
+}
+/*https://www.w3schools.com/howto/howto_js_accordion.asp*/
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  width: 75%;
+  transition: 0.4s;
+  margin-right:10px;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 1px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+#endy a{
+	text-decoration:none;
+	color:#086923;
+}
+#end {
+	visibility:hidden;
+}
+.wrapper {
+  position: relative;
+}
+#endy {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

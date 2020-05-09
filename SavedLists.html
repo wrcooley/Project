@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen and (orientation:portrait)"/>
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<head>
+    <title> Saved Lists </title>
+</head>
+
+<body>
+    <header>Saved Lists</header>
+	<!--https://www.w3schools.com/howto/howto_js_accordion.asp-->
+	<button id="gohome"><a href="index.html">Home </a></button>
+	
+	<button id="USE"><a href="Staples.html">Use</a></button>
+	<button class="accordion" >Staples (expand)</button>
+	<div class="panel">
+	<p id="savedlist">Eggs</p>
+	<p id="savedlist">Butter</p>
+	<p id="savedlist">Bread</p>
+	<p id="savedlist">Milk</p>
+	<p id="savedlist">Orange Juice</p>
+	<p id="savedlist">Spaghetti</p>
+	<p id="savedlist">Potatos</p>
+	</div>
+	<button id="USE"><a href="CakeMaking.html">Use</a></button>
+	<button class="accordion">Cake Making (expand)</button>
+	<div class="panel">
+	<p id="savedlist">Cake Flour</p>
+	<p id="savedlist">Sugar</p>
+	<p id="savedlist">Eggs</p>
+	<p id="savedlist">Premade Frosting</p>
+	<p id="savedlist">Non-Stick Spray</p>
+	<p id="savedlist">Candles</p>
+	<p id="savedlist">Vanilla Extract</p>
+	</div>
+	<button id="USE"><a href="Party.html">Use</a></button>
+	<button class="accordion">Party (expand)</button>
+	<div class="panel">
+	<p id="savedlist">Chips</p>
+	<p id="savedlist">Salsa</p>
+	<p id="savedlist">2-Liter Soda</p>
+	<p id="savedlist">Pizza Dough</p>
+	<p id="savedlist">Tomato Sauce</p>
+	<p id="savedlist">Pepperoni</p>
+	<p id="savedlist">Mozzarella Cheese</p>
+	</div>
+	<button id="USE"><a href="EmptyList.html">Use</a></button>
+	<button class="accordion">Empty List (expand)</button>
+	<div class="panel">
+	<p id="savedlist">[This list is empty. It's included as a demonstration of what happens when you try to go shopping with an empty list, or add an item to an empty list.]</p>
+	</div>
+	
+</body>
+<script>
+<!--https://www.w3schools.com/howto/howto_js_accordion.asp-->
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</html>

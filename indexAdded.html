@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen and (orientation:portrait)"/>
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<head>
+    <title> Welcome to Infocart </title>
+</head>
+
+<body>
+    <!-- HTML5 article tag for content -->
+    <header>infocart</header>
+
+    <h1>Welcome to Infocart! Add items to your shopping list, or go shopping!</h1>
+    <div>
+	<fieldset class="checkboxgroup">
+    <p>My Shopping List</p>
+    <label><input type="checkbox"> Cheddar Cheese</label>
+    <label><input type="checkbox"> Garlic</label>
+    <label><input type="checkbox"> Crackers</label>
+    <label><input type="checkbox"> Salami</label>
+	<label><input type="checkbox"> Orange Juice</label>
+	<label><input type="checkbox"> Grape Juice</label>
+	<label><input type="checkbox"> Ground Beef</label>
+	<label><input type="checkbox"> Your Item Here!</label>
+	
+	</fieldset>
+	</div>
+	<!--Advice on getting the window to reload from-->
+	<!--https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click-->
+	<button id="delitems" onClick="window.location.reload();">Delete Selected Items</button>
+	<button id ="savelist" onClick=promptButtonClicked();alert("Saved!");>Save This List</button>
+	
+    <!-- Navigation buttons -->
+    <nav id="main_nav">
+      <ul>
+         <!-- LI stands for list item -->
+		 <li onClick=alert("Unimplemented.")><a>Add Item </a></li>
+		 <li><a href="SavedLists.html">Saved Lists </a></li>
+         <li><a href="Shopping.html">Go Shopping </a></li>
+      </ul>
+    </nav>
+</body>
+<script>
+function promptButtonClicked() {     	
+	/*Prompt displays a message and returns a string depending on what the user has entered. It can be used for simple input. We stored the returned string in a variable.*/  
+	prompt("What would you like to call this list?");
+	
+	}
+</script>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen and (orientation:portrait)"/>
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<head>
+    <title> Go Shopping </title>
+	<script>
+var mapArr= new Array("Dots Only.jpg","Path1.jpg","Path2.jpg","Path3.jpg","Path4.jpg","Path5.jpg","Path6.jpg","Path7.jpg","Path8.jpg","Path9.jpg");
+var i =0;
+function changeImgF() {
+	var imgy=document.getElementById("mapImg")
+	i+=1;
+	im=i-1;
+	imgy.src=mapArr[i];
+	if(i<8 && i>0){
+	document.getElementById("map"+i).style.background="#40FF76";
+	document.getElementById("map"+im).style.background="#FFFFFF";
+	}
+	if(i==8){
+		document.getElementById("map7").style.background="#FFFFFF";
+	}
+	if(i==9){
+		nextB=document.getElementById("next");
+		nextB.style.visibility="hidden";
+		endB=document.getElementById("end");
+		endB.style.visibility="visible";
+	}
+}
+function changeImgB() {
+if(i==0){
+	alert("You can't go back further!")
+}
+else{
+if(i==9){
+		nextB=document.getElementById("next");
+		nextB.style.visibility="visible";
+		endB=document.getElementById("end");
+		endB.style.visibility="hidden";
+	}
+	if(i==1){
+		document.getElementById("map1").style.background="#FFFFFF";
+	}
+	var imgy=document.getElementById("mapImg")
+	i-=1;
+	im=i+1;
+	imgy.src=mapArr[i];
+	
+	document.getElementById("map"+i).style.background="#40FF76";
+	document.getElementById("map"+im).style.background="#FFFFFF";
+	
+}
+}
+</script>
+</head>
+
+<body>
+    <header>Go Shopping</header>
+	
+	<button id="gohome"><a href="index.html">Home </a></button>
+	
+	
+	<img id="mapImg" src="Dots Only.jpg">
+	<p id="map1"> Garlic</p>
+    <p id="map2"> Cheddar Cheese</p>
+    <p id="map3"> Salami</p>
+    <p id="map4"> Crackers</p>
+	<p id="map5"> Orange Juice</p>
+	<p id="map6"> Grape Juice</p>
+	<p id="map7"> Ground Beef</p>
+	<button id="prev" onClick=changeImgB();>Prev Item</button>
+	<!--Some advice on positioning objects on top of others from -->
+	<!--https://stackoverflow.com/questions/2941189/how-to-overlay-one-div-over-another-div-->
+	<div class="wrapper">
+		<button id="next" onClick=changeImgF();>Next Item</button>
+		<div id="end">
+			<button id="endy"><a href="index.html">Return Home</button>
+		</div>
+	</div>
+	
+</body>
+</html>
+
+
+<!--Image credit https://www.pinterest.com/pin/300756081345043603/ -->
